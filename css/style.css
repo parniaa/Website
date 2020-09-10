@@ -45,10 +45,14 @@ h2{
     padding : 60px 0;
 
 }
-
+/* 
 img{
     max-width: 100%;
-}
+} */
+.container{
+    display: grid;
+    
+  }
 
 /* Profile
 -------------------------- */
