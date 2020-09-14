@@ -1,0 +1,30 @@
+html, body{
+    background : rgb(135, 222, 135);
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    height: 100%;
+    
+
+}
+header, main, nav, aside,footer{
+    background: cadetblue;
+    color: chartreuse;
+}
+
+body{
+    margin: 1em;
+    display: grid;
+    grid: auto-flow min-content / repeat(12, 1fr);
+    gap: 1em;
+
+}
+header, footer{
+    grid-column: 1/13;
+}
+aside, nav {
+    grid-column: 1/4;
+}
+main{
+    grid-column: 5/13;
+    grid-row: 2/4;
+}

@@ -1,20 +1,23 @@
-/* Global styles
--------------------------- */
+/* Global styles    ------------------------- */
 body{
-    color: #343434;
-    margin: 0;
+    margin: 1em;
+    display: grid;
+    grid: auto-flow min-content / repeat(12, 1fr);
+    gap: 1em;
+    margin: 10px;
     font-family: 'Montserrat', sans-serif;
     font-size: 20px;
-    line-height: 1.2;
+
 }
-ul {
-    
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-  }
-li{
-    display: inline;
+header, footer{
+    grid-column: 1/13;
+}
+aside, nav {
+    grid-column: 1/4;
+}
+main{
+    grid-column: 5/13;
+    grid-row: 2/4;
 }
 a{
     color: #FFE66D;
@@ -32,29 +35,10 @@ h2{
     margin : 0 ;
     font-family: 'Cormorant Garamond', serif;
 }
-.content-wrap   {
-    max-width:500px;
-    width: 88%;
-    margin : 0 auto;
-    padding : 60px 0;
-}
-.header-content{
-    max-width:700px;
-    width: 88%;
-    margin : 0 auto;
-    padding : 60px 0;
 
-}
-/* 
-img{
-    max-width: 100%;
-} */
-.container{
-    display: grid;
-    
-  }
 
-/* Profile
+
+/* Main content
 -------------------------- */
 header{
         color: #F7fff7;
@@ -63,47 +47,19 @@ header{
     width: 700px;
     size: 700px;
 }
-
-/* Blog
--------------------------- */
-.projects{
-    background: burlywood;
-}
-.projects a{
-    color: white;
-    background: darkblue;
-    text-decoration: none;
-    padding: 8px;
-    border-radius: 4px;
-}
-.projects a:hover{
-    background: lime;
-}
-.projects .btn{
-    color: #F7fff7;
-    background: #2F3061;
-    text-decoration: none;
-    padding: 7px;
-    border-radius: 2px;
-    display: inline-block;
-}
-.projects .btn:hover{
-    background: rgba(47, 48, 97, 80%);
-}
-/* .flex-container {
-    background: crimson;
-    width: 1000px;
-    display: inline-flex;
-    flex-wrap: wrap;
-} */
-.tt{
-    display: inline;
-    flex-wrap: wrap;
+main{
+    background-color:gray;
 }
 
-/* Work Experience
+/* About
 -------------------------- */
-.work-experience{
+.About{
+    background-color: white;
+    margin: 5px;
+}
+/* Experience
+-------------------------- */
+.experience{
     background: #A1C6D7;
 }
 /* Contact Info
@@ -112,14 +68,4 @@ footer{
     background: #343434;
     color: #F7fff7;
     text-align: center;
-}
-.contact-list{
-    list-style-type: none;
-    padding: 0;
-    display: flex;
-    justify-content: space-between;
-}
-.contact-list a {
-    padding: 15px;
-    display: inline-block;
 }
